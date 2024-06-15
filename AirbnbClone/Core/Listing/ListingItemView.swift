@@ -20,8 +20,10 @@ struct ListingItemView: View {
         VStack(spacing: 8) {
             // Images
             TabView {
-                ForEach(0 ... 3, id: \.self) {image in
-                        Rectangle()
+                ForEach(images, id: \.self) { image in
+                        Image(image)
+                        .resizable()
+                        .scaledToFill()
                 }
             }
             .frame(height: 320)
@@ -60,7 +62,6 @@ struct ListingItemView: View {
             .font(.footnote)
             
         }
-        .padding()
     }
 }
 
