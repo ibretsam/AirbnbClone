@@ -12,7 +12,7 @@ struct AirbnbCloneApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            ExploreView()
+            MainTabView()
         }
     }
 }
